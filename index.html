@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="top-nav">
+        <div class="logo"><img src="src/media/logo_white.png" alt="Tribute to House logo"></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#djs">DJs</a></li>
+            <li><a href="#contact">Send Us Your Set</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="section hero-section">
+        <div class="hero-content">
+            <h1>Tribute to House</h1>
+            <h2>Honoring house music since 2024</h2>
+            <div class="hero-cta">
+                <a href="#contact" class="btn">Send us your set</a>
+                <a href="#next-event" class="btn">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="vinyl-container">
+            <div class="vinyl" id="vinyl"></div>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" orient="vertical">
+        </div>
+        <audio id="bg-audio" src="src/player/track.mp3" loop autoplay></audio>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About the Label</h2>
+        <p>Tribute to House is a house music label and cultural brand connecting DJs and dancers worldwide. Our community celebrates the sound of house music through releases and global events that keep the spirit alive.</p>
+    </section>
+
+    <section id="next-event" class="section highlight">
+        <h2>Next Event</h2>
+        <div class="event-details">
+            <p class="event-date">June 30, 2024</p>
+            <h3 class="event-name">Summer Night Groove</h3>
+            <p class="event-location">Barcelona, Spain</p>
+            <p class="event-desc">Join us for a night of pure house bliss under the stars.</p>
+            <a href="#" class="btn">Buy Tickets</a>
+        </div>
+    </section>
+
+    <section id="events" class="section">
+        <h2>Other Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event-card">
+                <p class="event-date">July 10, 2024</p>
+                <h3>Underground Pulse</h3>
+                <p>Berlin, Germany</p>
+            </div>
+            <div class="event-card">
+                <p class="event-date">July 28, 2024</p>
+                <h3>Beach Beats</h3>
+                <p>Miami, USA</p>
+            </div>
+            <div class="event-card">
+                <p class="event-date">August 15, 2024</p>
+                <h3>Rooftop Sessions</h3>
+                <p>Tokyo, Japan</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="djs" class="section">
+        <h2>Featured Collabs / DJs</h2>
+        <div class="dj-grid">
+            <div class="dj-card"><img src="src/djs/1.jpeg" alt="DJ 1"><p>DJ Rhythmix</p></div>
+            <div class="dj-card"><img src="src/media/flower_purple.png" alt="DJ 2"><p>Beat Blaze</p></div>
+            <div class="dj-card"><img src="src/media/sun_orange.png" alt="DJ 3"><p>Solar Groove</p></div>
+            <div class="dj-card"><img src="src/media/star_purple.png" alt="DJ 4"><p>Night Pulse</p></div>
+        </div>
+    </section>
+
+    <section id="social" class="section">
+        <h2>Socials</h2>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/tribute_to_house" target="_blank">Instagram</a></li>
+            <li><a href="https://on.soundcloud.com/qMqd4XoPvq6AHAMwUz" target="_blank">SoundCloud</a></li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Send Us Your Set</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="file" name="file">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <p id="form-response" class="hidden">Thank you!</p>
+    </section>
+
+    <footer class="section">
+        <p>&copy; 2024 Tribute to House</p>
+        <ul class="footer-links">
+            <li><a href="https://www.instagram.com/tribute_to_house" target="_blank">Instagram</a></li>
+            <li><a href="https://on.soundcloud.com/qMqd4XoPvq6AHAMwUz" target="_blank">SoundCloud</a></li>
+            <li><a href="#hero" id="back-to-top">Back to Top</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
